@@ -193,6 +193,48 @@
 %----------------------------------------------------------------------------------------
 \labday{Saturday, March 25, 2017}
 \experiment{101 Formulaic Alphas\cite{Kakushadze2015}}
+When I saw this title, I thought this is an introductory paper to alphas as the 101 number usually indicated. It's really surpirsing that the author really wrote down 101 alphas. This kind of article is pretty different from common academic research papers. Many proprietary statement and hidden details. It's pretty interesting that this author even cited poems in the article. Anyway, as the first article to get started, I will record main points I get and list my quesitons below:
+\begin{itemize}
+\item Points
+\begin{enumerate}
+\item
+Alpha is a pretty general meaning in this article, not just the alpha like the one in CAPM. The author gives a definition and I quote, ''An alpha is a combination of mathematical expressions, computer source code, and configuration parameters that can be used, in combination with historical data, to make predictions about future movements of various financial instruments.'' There are countless alphas could be constructed.(grow superexponentially?)
+\item
+General speaking, alpha signals could be based on mean-reversion or momentum or mixed.
+\item
+A ``delay-d'' alpha means if the alpha is traded today then the construction of this alpha involves data d days ago
+\item
+It's alphas are traded. Some characteristics of each alpha could be calculated, like shape ratio, turnover, cps, etc, from their trading data. (Characteristics of each product)
+\item
+The pair-wise relationship could be characterized by covariance matrix. However, study shows that variances of each alpha, which are extracted from historical data, are relatively stable.The off-diagonal elements are the focus to estimate.
+\item
+Using cross-sectional regressions, returns are strongly correlated with volatility V based on their data:
+\begin{equation}
+R\sim V^\gamma
+\end{equation}
+where $\gamma\approx 0.76$. Returns have no significant dependence on the turnover $T$.
+\item To explore whether turnover could explain the correlation between alphas, multifactor risk model is applied. 
+\begin{equation}
+\Gamma_{ij}=\xi_i^2\delta_{ij}+\sum_{l,m}\Omega_{il}\Omega_{jm}\phi_{lm}
+\end{equation}
+I think the author applied a seemingly fancy skill to reachthe conclusion. I am still not sure why he did a symmetric tensor combinations.
+\item
+Result shows that linear and bilinear of log turnover have poor explanatory power of pair-wise correlations.
+\item
+Above conclusion does not necessarily mean the turnover adds no value in the risk factor model. It only shows that turnover does not appear to useful in modeling pair-wise alpha correlations.
+\end{enumerate}
+\item Questions
+\begin{enumerate}
+\item 
+How to construct alpha systematically is not clear. If we want to construct alphas in billions, some clever methods needed.
+\item
+I need to study multi-factor risk model in detail
+\item
+How to understand three symmetrically constructed tensors are orthogonal to each other? Intuitively I agree. However, I need to understand it mathematically. I guess the answer should be found in statistics.
+\item
+Whether turnover adds value via the specific risk? Proprietary methods...
+\end{enumerate}
+\end{itemize}
 \experiment{Performance v. Turnover: A Story by 4,000 Alphas\cite{Kakushadze2016}}
 \experiment{Statistical arbitrage in the US equities market\cite{Avellaneda2010}}
 \experiment{Active portfolio management\cite{grinold2000active}}
